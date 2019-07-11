@@ -136,18 +136,18 @@ contract ERC223 {
 
 
 /**
- * @title Prediction Token
- * @author Prediction Token
- * @dev Prediction Token is an ERC223 Token with ERC20 functions and events
+ * @title Global Token
+ * @author Global Token
+ * @dev Global Token is an ERC223 Token with ERC20 functions and events
  *      Fully backward compatible with ERC20
  */
-contract Pred is ERC223, Ownable {
+contract GlobalToken is ERC223, Ownable {
     using SafeMath for uint256;
 
-    string public name = "Prediction Token";
-    string public symbol = "PRED";
+    string public name = "Global Token";
+    string public symbol = "GLOB";
     uint8 public decimals = 8;
-    uint256 public totalSupply = 10e6 * 1e8;
+    uint256 public totalSupply = 10e7 * 1e8;
     uint256 public distributeAmount = 0;
     bool public mintingFinished = false;
 
